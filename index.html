@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logochiquito.png">
+  <meta name="description" content="Te has preguntado cómo abrir una puerta o cómo utilizar un lápiz? Aquí te enseñamos!">
+  <meta name="keywords"
+    content="Ah con Razón, explicaciones, explicación, cómo abrir una puerta, cómo teclear una tecla, cómo apretar tecla, dónde está la tecla ctrl, tecla ctrl">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos/css/estilos.css">
+  <title>Ah Con Razón</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="headerArriba">
+
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="img/Logo.png" class="logoNav" alt="Logo">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"> <img src="img/casa.svg" alt="inicio">
+                    Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="upload-gente.html"> <img src="img/global.svg" alt="Global">
+                      Global</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="categorias.html" id="offcanvasNavbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/trespuntitos.svg" class="tresPuntos" alt="categorias"> Categorías
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="categorias.html">Categorías</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="categ-tecnologia.html">Tecnología</a></li>
+                    <li><a class="dropdown-item" href="categ-cuerpo.html">Cuerpo</a></li>
+                    <li><a class="dropdown-item" href="categ-otros.html">Otros</a></li>
+
+                  </ul>
+                <li class="nav-item">
+
+                  <a class="nav-link" href="configuraciones.html"><img src="img/configuracion.svg"
+                      alt="configuraciones">Configuraciones</a>
+                </li>
+                <li class="nav-item">
+
+                  <a class="nav-link" href="favoritos.html"><img src="img/estrella.svg" alt="favoritos">Favoritos</a>
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" href="quesesto.html"><img src="img/question-solid.svg" alt="que es esta página?">Qué es esta
+                    página?</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html">
+        <img src="img/Logo.png" alt="logo">
+      </a>
+      <input type="search" placeholder="Buscar" class="buscar">
+      <img src="img/lupa.svg" class="lupa" alt="lupa buscar">
+      <a href="upload.html">  <img src="img/upload.svg" class="upload" alt=""> </a> 
+      <button type="button" class="btn btn-primary perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <img src="img/perfil.jpg" alt="perfil">
+      </button>
+
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Regístrate</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Dirección de email</label>
+                <input type="email" class="form-control" placeholder="Ejemplo@gmail.com" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">No compartiremos tu email ni contraseña con nadie.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Informarme sobre actualizaciones</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Listo</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navIzq">
+      <a href="index.html" class="navIzq__link"> <img src="img/casa.svg" alt="inicio"> </a>
+      <a href="upload-gente.html" class="navIzq_link"><img  src="img/global.svg" alt="global"></a>
+      <a href="categorias.html" class="navIzq__link"> <img src="img/trespuntitos.svg" class="tresPuntos" alt="categorias"> </a>
+      <a href="configuraciones.html" class="navIzq__link"> <img src="img/configuracion.svg" alt="configuraciones"> </a>
+      <a href="favoritos.html" class="navIzq__link"> <img src="img/estrella.svg" alt="favoritos"> </a>
+      <a href="quesesto.html" class="navIzq__link"> <img src="img/question-solid.svg" alt="que es esta página?"> </a>
+      
+    </div>
+  </header>
+
+
+  <main>
+    <div class="principal">
+
+
+      <a href="abrirpuerta.html">
+        <div class="principal__caja"> <img src="img/puerta.jpg" alt="persona abriendo puerta">
+          <h5>¿Cómo abrir una puerta?</h5>
+      </a>
+      <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+
+    
+    <a href="ctrl.html">
+      <div class="principal__caja"> <img src="img/ctrl.jpg" alt="tecla cóntrol">
+        <h5>¿Cómo presionar la letra cóntrol?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="botella.html">
+      <div class="principal__caja"> <img src="img/botella.jpg" alt="persona abiendo botella">
+        <h5>¿Cómo abrir una botella de plástico?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="paso.html">
+      <div class="principal__caja"> <img src="img/paso.jpg" alt="dando un paso">
+        <h5>¿Cómo dar un paso?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="secreto.html">
+      <div class="principal__caja"> <img src="img/secreto.jpg" alt="archivo con cosas secretas">
+        <h5>¿Cómo guardar un secreto?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="colores.html">
+      <div class="principal__caja"> <img src="img/verdenaranja.jpg" alt="color verde y naranja">
+        <h5>¿Cómo diferenciar entre el verde y el naranja?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="beber.html">
+      <div class="principal__caja"> <img src="img/agua.jpg" alt="sirviendo agua">
+        <h5>¿Cómo beber agua?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="fuego.html">
+      <div class="principal__caja"> <img src="img/pcfuego.jpg" alt="notebook quemándose">
+        <h5>¿Cómo saber si mi PC está quemándose?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="app.html">
+      <div class="principal__caja"> <img src="img/appcelular.jpg" alt="celular con apps">
+        <h5>¿Cómo abrir una app en mi celular?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="mouse.html">
+      <div class="principal__caja"> <img src="img/mouse.jpg" alt="mouse de PC">
+        <h5>¿Cómo usar un mouse?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="youtube.html">
+      <div class="principal__caja"> <img src="img/youtube.jpg" alt="YouTube logo">
+        <h5>¿Cómo ver un video de YouTube desde mi PC?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    <a href="nariz.html">
+      <div class="principal__caja"> <img src="img/nariz.jpg" alt="mirándose al espejo">
+        <h5>¿Cómo verte la nariz?</h5>
+    </a>
+    <div class="favorito"> <img src="img/estrella - copia.svg" alt=""> </div>
+    </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <h4 style="display: inline-block;">Página creada por Luka Díaz Arcusa</h4> <p style="display:inline-block;">Estudio en CoderHouse</p>
+    <p>Mis redes sociales:</p>
+   <p> <img src="img/instagram.svg" alt="">  Instagram: <a href="https://www.instagram.com/luka.diazarcusa/?hl=es"> luka.diazarcusa</a></p> 
+   <p> <img src="img/linkedin.svg" alt=""> Linkedin: <a href="https://www.linkedin.com/in/luka-diaz-arcusa-652929225/">Luka Díaz Arcusa</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

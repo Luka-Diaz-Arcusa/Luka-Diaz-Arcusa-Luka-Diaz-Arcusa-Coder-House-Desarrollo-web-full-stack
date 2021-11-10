@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logochiquito.png">
+  <meta name="description" content="Las diferentes categorías de las explicaciones las puedes ver aquí!">
+  <meta name="keywords"
+    content="Ah con Razón, explicaciones, explicación, cómo abrir una puerta, cómo utilizar un lápiz, cómo teclear una tecla, cómo apretar tecla, dónde está la tecla ctrl, tecla ctrl">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos/css/estilos.css">
+  <title>Ah Con Razón - Categorías</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="headerArriba">
+
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="img/Logo.png" class="logoNav" alt="Logo">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"> <img src="img/casa.svg" alt="inicio">
+                    Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="upload-gente.html"> <img src="img/global.svg" alt="Global">
+                      Global</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="categorias.html" id="offcanvasNavbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/trespuntitos.svg" class="tresPuntos" alt="categorias"> Categorías
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="categorias.html">Categorías</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="categ-tecnologia.html">Tecnología</a></li>
+                    <li><a class="dropdown-item" href="categ-cuerpo.html">Cuerpo</a></li>
+                    <li><a class="dropdown-item" href="categ-otros.html">Otros</a></li>
+
+                  </ul>
+                <li class="nav-item">
+
+                  <a class="nav-link" href="configuraciones.html"><img src="img/configuracion.svg"
+                      alt="configuraciones">Configuraciones</a>
+                </li>
+                <li class="nav-item">
+
+                  <a class="nav-link" href="favoritos.html"><img src="img/estrella.svg" alt="favoritos">Favoritos</a>
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" href="quesesto.html"><img src="img/question-solid.svg" alt="que es esta página?">Qué es esta
+                    página?</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <a href="index.html">
+        <img src="img/Logo.png" alt="logo">
+      </a>
+      <input type="search" placeholder="Buscar" class="buscar">
+      <img src="img/lupa.svg" class="lupa" alt="lupa buscar">
+      <a href="upload.html">  <img src="img/upload.svg" class="upload" alt=""> </a> 
+      <button type="button" class="btn btn-primary perfil" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <img src="img/perfil.jpg" alt="perfil">
+      </button>
+
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Regístrate</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Dirección de email</label>
+                <input type="email" class="form-control" placeholder="Ejemplo@gmail.com" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">No compartiremos tu email ni contraseña con nadie.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Informarme sobre actualizaciones</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Listo</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navIzq">
+      <a href="index.html" class="navIzq__link"> <img src="img/casa.svg" alt="inicio"> </a>
+      <a href="upload-gente.html" class="navIzq_link"><img  src="img/global.svg" alt="global"></a>
+      <a href="categorias.html" class="navIzq__link"> <img src="img/trespuntitos.svg" class="tresPuntos" alt="categorias"> </a>
+      <a href="configuraciones.html" class="navIzq__link"> <img src="img/configuracion.svg" alt="configuraciones"> </a>
+      <a href="favoritos.html" class="navIzq__link"> <img src="img/estrella.svg" alt="favoritos"> </a>
+      <a href="quesesto.html" class="navIzq__link"> <img src="img/question-solid.svg" alt="que es esta página?"> </a>
+      
+    </div>
+  </header>
+
+  <main>
+    <div class="categorias">
+      <a href="categ-tecnologia.html">
+        <div class="categorias__caja">
+          <h5>Tecnología</h5>
+        </div>
+      </a>
+      <a href="categ-cuerpo.html">
+        <div class="categorias__caja">
+          <h5>Cuerpo</h5>
+        </div>
+      </a>
+      <a href="categ-otros.html">
+        <div class="categorias__caja">
+          <h5>Otros</h5>
+        </div>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <h4 style="display: inline-block;">Página creada por Luka Díaz Arcusa</h4> <p style="display:inline-block;">Estudio en CoderHouse</p>
+    <p>Mis redes sociales:</p>
+   <p> <img src="img/instagram.svg" alt="">  Instagram: <a href="https://www.instagram.com/luka.diazarcusa/?hl=es"> luka.diazarcusa</a></p> 
+   <p> <img src="img/linkedin.svg" alt=""> Linkedin: <a href="https://www.linkedin.com/in/luka-diaz-arcusa-652929225/">Luka Díaz Arcusa</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
