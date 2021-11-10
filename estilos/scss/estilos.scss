@@ -1,0 +1,27 @@
+@import "header";
+@import "footer";
+@import "index";
+@import "favoritos";
+@import "configuraciones";
+@import "categoriasGeneral";
+@import "categorias";
+@import "quesesto";
+@import "explicaciones";
+@import "upload";
+
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+
+@media screen and (min-width: 0px) {
+    a {
+        text-decoration: none;
+    }
+    body {
+        background-color: $colorbody;
+      
+    }
+}
+    

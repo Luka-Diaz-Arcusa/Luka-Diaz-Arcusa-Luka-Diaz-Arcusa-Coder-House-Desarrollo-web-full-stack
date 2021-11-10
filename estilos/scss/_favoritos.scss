@@ -1,0 +1,92 @@
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+// Los favoritos llaman a lo mixins del index
+
+@media screen and (min-width: 0px) {
+    .fav__titulo{
+        color: $coloroscuro;
+        margin-bottom: 1rem;
+        left: 3rem;
+        position: relative;
+        top: 1rem;
+        display: inline-block;
+        font-size: 12px; 
+        background-color: $colorclaro;
+        padding: .7rem;
+        border-radius: 3px;
+        }
+    
+    .favoritos {
+            @include principal;
+            margin-bottom: 10rem;
+            .favoritos__caja{
+                @include principal__caja;
+             .favorito {
+                 @include favorito;
+                 }
+                
+            }
+        }            
+}
+    
+      
+ 
+      @media screen and (min-width: 375px) { 
+
+        .favoritos {
+            margin-bottom: 20rem;
+          .favoritos__caja {
+             @include principal__caja-375;
+              }
+           }
+      }
+      
+      @media screen and (min-width: 425px) {
+          .fav__titulo {
+              font-size: 16px
+          }
+          .favoritos {
+            margin-bottom: 20rem;
+              .favoritos__caja {
+                  @include principal__caja-425;
+                  }
+               }
+      }
+      
+      @media screen and (min-width: 768px) {
+        .fav__titulo {
+            font-size: 20px
+        }
+          .favoritos {
+            margin-bottom: 20rem;
+              .favoritos__caja {
+                 @include principal__caja-768;
+                  }
+               }
+      }
+      
+      @media screen and (min-width: 1024px) {
+        .fav__titulo {
+            font-size: 26px;
+            left: 4.4rem
+        }
+          .favoritos {
+              @include principal-1024;
+              margin-bottom: 20rem;
+              .favoritos__caja {
+               @include principal__caja-1024
+                  }
+               }
+      }
+      
+      @media screen and (min-width: 1440px) {
+          .favoritos {
+              .favoritos__caja {
+                  @include principal__caja-1440;
+                  }
+               }
+      }
+

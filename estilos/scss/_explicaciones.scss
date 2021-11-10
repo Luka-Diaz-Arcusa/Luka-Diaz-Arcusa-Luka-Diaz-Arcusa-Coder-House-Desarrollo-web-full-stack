@@ -1,0 +1,94 @@
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+
+
+
+
+
+@media screen and (min-width: 0px) {
+    // Tuve que modificar el tamaño del video de youtube
+    .youtube {
+        width: 70%;
+        height: 10rem;
+    }
+
+    .cajaExp {
+        background-color: $colorclaro;
+        height: max-content;
+        position: relative;
+        top: .8rem;
+        left: 3rem;
+        width: 82%;
+        margin-bottom: 20rem;
+        padding: .5rem;
+        width: 80%;
+        
+        .puertamadera {
+            width: 20%;
+            margin-bottom: 1rem;
+        }
+        img {
+            width: 50%;
+        }
+        .imgmedio {
+            width: 40%;
+        }
+        .color {
+            display: block;
+        }
+     
+    }
+    .anuncio {
+        p {
+            display: none;
+        }
+    }
+     
+}
+@media screen and (min-width: 375px) {
+    .cajaExp {
+        width: 85%;
+    }
+}
+@media screen and (min-width: 425px) {
+    .cajaExp {
+        width: 65%;
+    }
+    .anuncio {
+        width: 19%;
+        height: 85%;
+        background-color: #EEEEEE;
+        border: solid rgb(3, 95, 199) 1px;
+        position: fixed;
+        top: 4.5rem;
+        right: 1rem;
+        z-index: 0; 
+        padding: 1rem;  
+        p {
+            display: block;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .youtube {
+        height: 20rem;
+    }
+    .cajaExp {
+        width: 75%;
+    }
+    .anuncio {
+        width: 15%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .cajaExp {
+        left: 4rem;
+        width: 81%;
+    }
+    .anuncio {
+        width: 11%;
+    }
+}

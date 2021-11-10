@@ -1,0 +1,61 @@
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+// hice mixins en categorias para hacer más fácil la modificacion en los medias
+
+@mixin categorias {
+    display: flex;
+    margin: 0.4rem 0 30rem 2.5rem;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+@mixin categoriasA {
+    background-color: $colorclaro;
+    padding-top: 0.6rem;
+    border: solid black 1px;
+    height: 3rem;
+    text-align: center;
+    color: black;
+    margin: 0.2rem;
+}
+
+
+
+@media screen and (max-width: 400px) { 
+.categorias {
+    @include categorias;
+    a {
+    @include categoriasA;
+    width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .categorias {
+        @include categorias;
+        a {
+        @include categoriasA;
+        width: 48.2%;
+        }
+ }
+}
+
+@media screen and (min-width: 768px) {
+    .categorias {
+        @include categorias;
+        a {
+        @include categoriasA;
+        width: 32.2%;
+        }
+ }
+}
+
+@media screen and (min-width: 1024px) {
+    .categorias {
+        margin-left: 3rem;
+    }
+}

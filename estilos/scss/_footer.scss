@@ -1,0 +1,35 @@
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+@media screen and (min-width: 0px) {
+    footer {
+        background-color: $coloroscuro;
+        height: 13rem;
+        z-index: 3;
+        position: relative;
+        h4, p {
+            color: $colorclaro; 
+            margin-left: 0.4rem;
+        }
+        a {
+            color: $colorclaro;
+        }
+        img {
+            width: 2rem;
+        }
+    }
+    
+}
+
+// Cuando la pantalla es pequeña, se salía el texto porque es muy grande
+
+@media screen and (max-width: 360px) {
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 13px;
+    }
+}

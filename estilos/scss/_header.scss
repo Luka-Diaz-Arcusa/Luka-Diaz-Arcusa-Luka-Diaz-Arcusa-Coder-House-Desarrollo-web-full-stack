@@ -1,0 +1,230 @@
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+
+@media screen and (min-width: 0px){
+header {
+    background-color: $colorclaro;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    height: 3.7rem;
+    // la parte de arriba del header
+    .headerArriba {
+     
+        .lupa, .upload{
+            width: 1.5rem;
+        }
+
+        .upload {
+            position: absolute;
+     
+            right: 5rem;
+            top: 1rem;
+    
+            }  
+            // esto es el boostrap de arriba a la izquierda
+            nav {
+               
+                display: inline-block;
+                .offcanvas-body, .offcanvas-header {
+            
+                    padding-left: 0.5rem;
+                    .tresPuntos {
+                        width: 0.9rem;
+                        margin-left: 0.35rem;
+                    }
+                    
+                }
+                 .offcanvas {
+                
+                width: 13rem;
+                background-color: $colorclaro;
+        
+                    img {
+                        width: 1.6rem;
+                        margin-right: 0.2rem;
+                    }
+                    .logoNav {
+                        width: 8rem;
+                    }
+                }
+                .nav-item{
+
+                width: 11rem;
+                .dropdown-menu {
+                    margin-left: 1.4rem;
+                    min-width:fit-content;
+                    li {
+                        padding: 0px;
+                    }
+                 
+                }
+            }
+            } 
+           
+        //    el logo
+            img {
+                width: 6rem;
+             }
+        
+             .perfil {
+                background-color: $colorclaro;
+                border-color: $colorclaro;
+                width: 2.5rem;
+                padding: 0px;
+                margin: 0.5rem;
+                position: absolute;
+                right: 1rem;
+                border-radius: 50px;
+                img {
+                    border-radius: 50px;
+                    width: 2.5rem;
+                    border: $coloroscuro solid 1px;
+                }
+              
+             }
+ 
+      }    
+    //   izquierda del header
+    .navIzq {
+       width: max-content;
+        background-color: $colorclaro;
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+            // imágenes pequeñas de la izquierda
+            img {
+                width: 1.8rem;
+                margin: 0.3rem;
+            }
+            // esta era muy grande
+            .tresPuntos {
+                width: 1rem;
+                margin-left: 0.7rem;
+            }
+        
+        }
+      }
+    //   partes del boostrap cuando se abre
+      .nav-item {
+        width: 13rem;
+        
+    }
+ 
+    .modal-backdrop {
+     z-index: 1;
+     
+                }
+
+    .modal {
+            top: 3rem;
+    
+            .btn {
+                background-color: $colorbody;
+                border-color: $colorbody;
+            }
+        }
+    .modal-body, .modal-header {
+            background-color: $colorclaro;
+        }
+    
+}
+
+
+@media screen and (min-width: 320px) {
+        .lupa {
+        display: inline-block;
+        }
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .buscar::-webkit-search-cancel-button {
+        display: none;
+    }
+    .buscar {
+        border: none;
+        padding: .5rem;
+        outline: none;
+        position: relative;
+        left: 1rem;
+        width: 32%;
+        border-radius: 5px;
+        border: solid $coloroscuro 1px;
+    }
+    .buscar:focus {
+        border: solid $colorbody 1px;
+        outline: none;
+    }
+    
+    .lupa {
+        display: none;
+    } 
+    
+    header { 
+        .headerArriba {
+            img {
+                width: 7rem;
+            } 
+        } 
+    }
+       
+}
+
+@media screen and (min-width: 768px) {
+    .buscar {
+        left: 7rem;
+    }
+
+   
+}
+
+@media screen and (min-width: 1024px) {
+    .buscar {
+        left: 10rem;
+    }
+    // botones más grandes para pantallas más grandes
+    header {
+        .navIzq {
+            img {
+               width: 2.3rem;
+            }
+            .tresPuntos {
+                width: 1.2rem;
+            }
+        }
+    }
+   
+}
+
+
+// este de abajo está para que la barra de buscar no esté antes de los 500px de pantalla pero que aparezca después, no encontré otra forma de hacerlo
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .buscar::-webkit-search-cancel-button {
+        display: none;
+    }
+    .buscar {
+        border: none;
+        padding: .5rem;
+        outline: none;
+        position: relative;
+        left: 10rem;
+        width: 25rem;
+        border-radius: 5px;
+        border: solid $coloroscuro 1px;
+        display:none;
+    }
+    .buscar:focus {
+        border: solid $colorbody 1px;
+        outline: none;
+    }
+
+    
+}
+

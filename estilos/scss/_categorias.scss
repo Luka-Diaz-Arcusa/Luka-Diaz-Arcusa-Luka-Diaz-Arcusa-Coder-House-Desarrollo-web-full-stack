@@ -1,0 +1,118 @@
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+
+
+
+// Podría haber hecho que simplemente todos tengan la class .principal__caja y .prncipal pero preferí hacerlo lo más detallado posible por si acaso en un futuro fuese requerido
+
+
+
+@media screen and (min-width: 0px) {
+
+    .categoriasCuerpo, .categoriasTec, .categoriasOtros {
+        @include principal;
+        padding-bottom: 10rem;
+    }
+    .categoriasCuerpo__caja, .categoriasTec__caja, .categoriasOtros__caja {
+        @include principal__caja;
+        
+        .favorito {
+            @include favorito;
+        }
+    }
+
+
+    .categTitulo {
+    background-color: #EEEEEE;
+    margin: 1.2rem 0 0 3rem;
+    position: relative;
+    width: fit-content;
+    border-radius: 3px;
+    a {
+        color: black;
+    }   
+    h1 {
+        position: relative;
+        top: .3rem;
+        margin-right: 1rem;
+        display: inline-block;
+        font-size: 18px;
+     }
+
+
+ 
+//    esta flecha ayuda al usuario a darse cuenta que puede volver atrás solo con clickearla
+    .flechaizq {
+        width: 1.3rem;
+        margin: .5rem;
+    }
+  
+    }
+    
+
+}
+
+
+
+@media screen and (min-width: 375px) { 
+
+    .categoriasCuerpo, .categoriasTec, .categoriasOtros {
+      .categoriasCuerpo__caja, .categoriasTec__caja, .categoriasOtros__caja {
+          @include principal__caja-375;
+          }
+       }
+  
+  }
+  
+  @media screen and (min-width: 425px) {
+      .categoriasCuerpo, .categoriasTec, .categoriasOtros {
+          .categoriasCuerpo__caja, .categoriasTec__caja, .categoriasOtros__caja{
+              @include principal__caja-425;
+              }
+           }
+           .categTitulo {
+               h1 {
+                   font-size: 23px;
+               }
+           }
+  }
+  
+  @media screen and (min-width: 768px) {
+      .categoriasCuerpo, .categoriasTec, .categoriasOtros {
+          .categoriasCuerpo__caja, .categoriasTec__caja, .categoriasOtros__caja {
+              @include principal__caja-768;
+              }
+           }
+           .categTitulo {
+               h1 {
+                   font-size: 30px;
+               }
+               .flechaizq {
+                   width: 1.7rem;
+               }
+           }
+  }
+  
+  @media screen and (min-width: 1024px) {
+      .categoriasCuerpo, .categoriasTec, .categoriasOtros {
+          @include principal-1024;
+          .categoriasCuerpo__caja, .categoriasTec__caja, .categoriasOtros__caja {
+           @include principal__caja-1024
+              }
+           }
+           .categTitulo {
+               margin-left: 4rem;
+           }
+  }
+  
+  @media screen and (min-width: 1440px) {
+      .categoriasCuerpo, .categoriasTec, .categoriasOtros {
+          .categoriasCuerpo__caja, .categoriasTec__caja, .categoriasOtros__caja {
+             @include principal__caja-1440
+           }
+  }
+
+}

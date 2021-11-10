@@ -1,0 +1,150 @@
+$colorbody: #a9b2f3;
+$coloroscuro:#476072;
+$colorclaro: #EEEEEE;
+$colorbodyantes: #8388b6;
+
+// estos mixins son para las cajas del index, favoritos y las 3 categorías
+
+@mixin principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: .5rem 0 1rem 2.5rem;
+    z-index: 1;
+    }
+        
+ @mixin principal__caja {
+        height: 30%;
+        margin: .5rem;
+        width: 50+44%;
+        position: relative;
+        transition: all .4s;
+        &:hover {
+            transform: scale(1.03);
+        }
+            img {
+                width: 100%;
+                }
+        h5 {
+            height: 3rem;
+            color: black;
+            margin: .5rem;
+            margin-left: 0px;
+        }
+    }    
+
+@mixin favorito {
+    padding: .2rem 0rem 2rem .3rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: $coloroscuro;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+    
+    }
+}
+
+// estos son para que las cajas del index, favoritos y las 3 categorías queden bien según el tamaño de cada pantalla
+
+@mixin principal__caja-375 {
+    
+}
+
+@mixin principal__caja-425 {
+    width: 45.5%;
+    h5 {
+        font-size: 15px;
+        height: 2.1rem;
+    }
+}
+
+@mixin principal__caja-768 {
+    width: 31%;
+}
+
+@mixin principal-1024 {
+    margin: 1rem 0 5rem 3.9rem;
+}
+
+@mixin principal__caja-1024 {
+    width: 23%;
+
+}
+
+@mixin principal__caja-1440 {
+    h5 {
+        font-size: 20px;
+        height: 3rem;
+    }
+}
+
+// estos media llaman a los mixins de arriba
+
+@media screen and (min-width: 0px) {    
+    .principal {
+        @include principal;
+        .principal__caja {
+            @include principal__caja;
+            .favorito {
+            @include favorito;
+        }
+    } 
+        
+            }
+}
+
+
+@media screen and (min-width: 375px) { 
+   
+    .principal {
+
+    .principal__caja {
+        @include principal__caja-375;
+        } 
+    }
+}
+
+
+@media screen and (min-width: 425px) {
+    .principal {
+
+   
+        .principal__caja {
+           @include principal__caja-425;
+            } 
+        }
+         
+}
+
+@media screen and (min-width: 768px) {
+     .principal {
+        .principal__caja {
+            @include principal__caja-768;
+            } 
+        }
+         
+}
+
+@media screen and (min-width: 1024px) {
+     .principal {
+         @include principal-1024;
+            .principal__caja {
+            @include principal__caja-1024;
+        }
+    }
+}
+        
+
+@media screen and (min-width: 1440px) {
+    .principal { 
+        .principal__caja {
+            @include principal__caja-1440;
+            }  
+         }
+         
+}
